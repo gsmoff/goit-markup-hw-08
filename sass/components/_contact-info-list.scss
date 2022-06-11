@@ -1,0 +1,20 @@
+.address {
+    margin-top: 20px
+}
+.contact-info-list__link {
+    color: $primary-white-color;
+}
+.contact-info-list__item {
+    font-style: normal;
+    @include font(400, 14px, 1.71, 0.03em);
+    color: $contact-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:nth-child(n + 2) {
+        margin-top: 9px;
+    }
+    &:hover,
+    &:focus {
+    color: $accent-color;
+    }
+}
+
